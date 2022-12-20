@@ -3,6 +3,8 @@
   --light-blue: hsl(233, 100%, 69%);
   --dark-drayish-blue: hsl(210, 10%, 33%);
   --grayish-blue: hsl(201, 11%, 66%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 97%);
 }
 
 *,
@@ -59,4 +61,176 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
+.lead-text-s {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  padding-bottom: 3rem;
+}
+
+.lead-text-xs {
+  font-size: 0.95rem;
+  line-height: 1.6rem;
+  padding-bottom: 3rem;
+}
+
+.hero-title,
+.track-head-title,
+.desc-access-title {
+  font-size: 1.9rem;
+  color: var(--dark-grayish-blue);
+  line-height: 2.25rem;
+  padding-bottom: 1rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 2.15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero,
+.desc-track,
+.desc-access,
+.partner-companies,
+.download-info {
+  padding-bottom: 8.5rem;
+}
+
+.hero-btn-download,
+.download-btn-download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/**** HERO ****/
+
+.hero-logo {
+  padding: 5.75rem 0 3.25rem 0;
+}
+
+.hero-lead {
+  font-size: 1rem;
+}
+
+.btn-download {
+  padding: 0.9em 5.15em;
+  max-width: 300px;
+  border-radius: 50px;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  box-shadow: 1px 1px 5px var(--dark-drayish-blue);
+}
+
+.btn-ios {
+  background-color: var(--strong-cyan);
+}
+
+.btn-mac {
+  background-color: var(--light-blue);
+}
+
+/**** SECTION - APP DECRIPTION ****/
+.desc-track-head {
+  padding-bottom: 3.75rem;
+}
+
+.track-head-title,
+.desc-access-title,
+.desc-super-title,
+.super-details-title {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  padding-bottom: 1.25rem;
+}
+
+.desc-track-img {
+  padding-bottom: 2.7rem;
+}
+
+.details-div-title {
+  font-size: 1.5rem;
+  padding-bottom: 0.65rem;
+}
+
+.track-details-div {
+  padding-bottom: 3rem;
+}
+
+.desc-super-details {
+  padding-top: 2rem;
+}
+
+.super-details-title {
+  font-size: 1.5rem;
+}
+
+.super-details-div {
+  padding-bottom: 4rem;
+}
+
+.super-details-icon {
+  padding-bottom: 2rem;
+}
+
+/**** SECTION - PARTNER ****/
+.partner-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.partner-img-logo {
+  width: ;
+  height: auto;
+}
+
+/**** FOOTER ****/
+
+.footer-nav {
+  background-color: var(--light-gray);
+}
+
+.footer-logo {
+  width: 56px;
+  height: auto;
+}
+
+.footer-logo-sm {
+  padding: 2rem;
+}
+
+.nav-item-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.65rem;
+  padding-bottom: 3rem;
+}
+
+.nav-item-list {
+  font-size: 1.1rem;
+}
+
+.footer-nav-socials {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.fa-brands {
+  color: var(--dark-grayish-blue);
 }
