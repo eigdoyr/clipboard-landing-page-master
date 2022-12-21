@@ -12,8 +12,8 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html:focus-within {
@@ -116,10 +116,23 @@ p {
   align-items: center;
 }
 
+.track-head-title,
+.desc-access-title,
+.desc-super-title,
+.super-details-title {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  padding-bottom: 1.25rem;
+}
+
 /**** HERO ****/
 
 .hero-logo {
   padding: 5.75rem 0 3.25rem 0;
+}
+
+.hero-heading-text {
+  max-width: 554px;
 }
 
 .hero-lead {
@@ -145,17 +158,16 @@ p {
 }
 
 /**** SECTION - APP DECRIPTION ****/
+
 .desc-track-head {
   padding-bottom: 3.75rem;
+  max-width: 608px;
+  margin: 0 auto;
 }
 
-.track-head-title,
-.desc-access-title,
-.desc-super-title,
-.super-details-title {
-  font-size: 1.75rem;
-  line-height: 2rem;
-  padding-bottom: 1.25rem;
+.desc-access-head {
+  max-width: 608px;
+  margin: 0 auto;
 }
 
 .desc-track-img {
@@ -169,6 +181,8 @@ p {
 
 .track-details-div {
   padding-bottom: 3rem;
+  max-width: 336px;
+  margin: 0 auto;
 }
 
 .desc-super-details {
@@ -181,6 +195,8 @@ p {
 
 .super-details-div {
   padding-bottom: 4rem;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .super-details-icon {
@@ -194,9 +210,9 @@ p {
   gap: 3rem;
 }
 
-.partner-img-logo {
-  width: ;
-  height: auto;
+/**** SECTION - DOWNLOAD ****/
+.download-head {
+  max-width: 600px;
 }
 
 /**** FOOTER ****/
@@ -229,8 +245,118 @@ p {
   display: flex;
   justify-content: space-between;
   padding-bottom: 2rem;
+  gap: 1rem;
 }
 
 .fa-brands {
   color: var(--dark-grayish-blue);
+}
+
+/**** ACTIVE STATE ****/
+.btn-download:hover {
+}
+
+footer a:hover {
+  color: var(--strong-cyan);
+}
+
+@media (width >= 1024px) {
+  body {
+    background-image: url(./images/bg-header-desktop.png);
+  }
+
+  .lead-text-xs {
+    font-size: 0.9rem;
+  }
+
+  .hero-btn-download,
+  .download-btn-download {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .btn-download {
+    padding: 0.5em 1.75em;
+  }
+
+  .flex-column {
+    display: flex;
+  }
+
+  .desc-track-details {
+    text-align: start;
+  }
+
+  .track-img {
+    margin-left: -10rem;
+  }
+
+  .desc-track-img {
+    padding-right: 1em;
+  }
+
+  .details-div-lead {
+    padding-bottom: 0;
+  }
+
+  .details-div-title,
+  .super-details-title {
+    font-size: 1.15rem;
+  }
+
+  .desc-super-details {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .super-details-div:nth-of-type(1) {
+    margin-top: -9px;
+  }
+
+  .partner-lists {
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .footer-items {
+    display: flex;
+  }
+
+  .nav-item-lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 0;
+    gap: 0.5rem;
+    text-align: left;
+    margin-left: -5rem;
+  }
+
+  .nav-item-list {
+    font-size: 0.85rem;
+    padding-right: 3rem;
+  }
+
+  .nav-item-list:nth-of-type(2) {
+    grid-row: 2;
+  }
+  .nav-item-list:nth-of-type(4) {
+    grid-row: 2;
+  }
+
+  .footer-nav-socials {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0;
+  }
 }
